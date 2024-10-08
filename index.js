@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const PORT = 3000;
-require('dotenv').config();
+//require('dotenv').config();
 
 /*
 //DB connection, pulls from .env file
@@ -27,8 +27,8 @@ const pmsRouter = require('./routes/pms');
 app.use('/pms', pmsRouter);
 
 //prompt forwarder/api manager endpoint
-const forwarderRouter = require('./routes/apiManager');
-app.use('/forward', forwarderRouter);
+//const forwarderRouter = require('./routes/apiManager');
+//app.use('/forward', forwarderRouter);
 
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));

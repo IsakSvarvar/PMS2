@@ -12,6 +12,7 @@ router.get('/', async (req,res) => {
     };
 });
 
+/*
 //POST create new prompt
 router.post('/', async (req,res) => {
     try {
@@ -25,4 +26,8 @@ router.post('/', async (req,res) => {
     } catch (error) {
         res.status(500).send({msg: error.message});
     };
+
 });
+*/
+
+module.exports = router;
