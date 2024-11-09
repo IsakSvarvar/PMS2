@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 //const mongoose = require('mongoose');
-const PORT = 3000;
 //require('dotenv').config();
 
 /*
@@ -17,6 +16,7 @@ db.on('open', () => console.log("Connected to database"));
 //extras and works OOTB (though the prompts are theoretically
 // pubicly available)
 
+
 //use json to communicate with endpoints
 app.use(express.json());
 
@@ -26,9 +26,11 @@ app.use(express.json());
 const pmsRouter = require('./routes/pms');
 app.use('/pms', pmsRouter);
 
+
 //prompt forwarder/api manager endpoint
 //const forwarderRouter = require('./routes/apiManager');
 //app.use('/forward', forwarderRouter);
 
 
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+//export as app at the end (useful for autotests)
+module.exports = app;
