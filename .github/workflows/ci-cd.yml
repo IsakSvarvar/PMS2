@@ -54,9 +54,9 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t svarvari/pms-app:v${{ env.VERSION }} -t svarvari/pms-app:latest .
+          docker build -t svarvari/pms:${{ env.VERSION }} -t svarvari/pms:latest .
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push svarvari/pms-app:v${{ env.VERSION }}
-          docker push svarvari/pms-app:latest
+          docker push svarvari/pms:v${{ env.VERSION }}
+          docker push svarvari/pms:latest
