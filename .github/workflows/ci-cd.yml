@@ -9,18 +9,18 @@ on:
       - master
 
 jobs:
-  # Job 1: Testing
+  #Job 1: Testing
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20] # Test on multiple Node.js versions
+        node-version: [14, 16, 18]
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
