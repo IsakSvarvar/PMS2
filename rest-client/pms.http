@@ -3,6 +3,9 @@
 ### Get All Prompts
 GET {{BASEURL}}/pms
 
+### Get a Prompt by ID
+GET {{BASEURL}}/pms/1
+
 ### Create a New Prompt
 POST {{BASEURL}}/pms
 Content-Type: application/json
@@ -10,9 +13,6 @@ Content-Type: application/json
 {
   "text": "This is a test prompt"
 }
-
-### Get a Prompt by ID
-GET {{BASEURL}}/pms/1
 
 ### Update a Prompt by ID
 PUT {{BASEURL}}/pms/1

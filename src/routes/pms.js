@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const promptController = require('../controllers/promptController');
+const promptController = require('../controllers/pmsController');
 
 //routes
 router.get('/', promptController.getAllPrompts);
