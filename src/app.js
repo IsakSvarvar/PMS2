@@ -32,5 +32,5 @@ app.use('/pms', pmsRouter);
 //app.use('/forward', forwarderRouter);
 
 
-//export as app at the end (useful for autotests)
+//Export app
 module.exports = app;
